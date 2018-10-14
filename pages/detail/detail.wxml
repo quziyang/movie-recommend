@@ -1,0 +1,24 @@
+<!--pages/detail/detail.wxml-->
+<view class='detailContainer'>
+  <!-- 对应 js 文件的 data 中的 isMusicPlay 可直接在 wxml 中使用 -->
+  <!-- 根据音乐是否播放确定显示的大图 -->
+  <image class='headImg' src='{{isMusicPlay?detailObj.music.coverImgUrl:detailObj.detail_img}}'></image>
+  <image catchtap='handleMusicPlay' class='musicImg' src='{{isMusicPlay?"/images/music/music-stop.png":"/images/music/music-start.png"}}'></image>
+  <view class='avatar_date'>
+    <image src='{{detailObj.avatar}}'></image>
+    <text>{{detailObj.author}}</text>
+    <text>发布于</text>
+    <text>{{detailObj.date}}</text>
+  </view>
+  <text class='company'>{{detailObj.title}}</text>
+  <view class='collection_share_container'>
+    <view class='collection_share'>
+      <image wx:if='{{isCollected}}' catchtap='handleCollection' src='/images/icon/collection.png'></image>
+      <image wx:if='{{!isCollected}}' catchtap='handleCollection' src='/images/icon/collection-anti.png'></image>
+      <image catchtap='handleShare' src='/images/icon/share.png'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+  <button open-type='share'>转发此文章</button>
+  <text class='content'>{{detailObj.detail_content}}</text>
+</view>
