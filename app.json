@@ -14,13 +14,13 @@
     "list": [
       {
         "pagePath": "pages/list/list",
-        "text": "文章",
+        "text": "推荐",
         "iconPath": "/images/tab/yuedu.png",
         "selectedIconPath": "/images/tab/yuedu_hl.png"
       },
       {
         "pagePath": "pages/movie/movie",
-        "text": "电影",
+        "text": "Top250",
         "iconPath": "/images/tab/dianying.png",
         "selectedIconPath": "/images/tab/dianying_hl.png"
       }

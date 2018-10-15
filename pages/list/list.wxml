@@ -3,16 +3,25 @@
 <view>
   <swiper catchtap='carouselToDetail' indicator-dots indicator-color='grey' indicator-active-color='green'>
     <swiper-item>
-      <image data-swiperimg='0' src='/images/detail/carousel/01.jpg'></image>
+      <image data-swiperimg='0' src='/images/detail/list/Dunkirk.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image data-swiperimg='1' src='/images/detail/carousel/02.jpg'></image>
+      <image data-swiperimg='1' src='/images/detail/list/Interstellar.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image data-swiperimg='2' src='/images/detail/carousel/03.jpg'></image>
+      <image data-swiperimg='2' src='/images/detail/list/The-Dark-Knight-Rises.jpg'></image>
     </swiper-item>
     <swiper-item>
-      <image data-swiperimg='3' src='/images/detail/carousel/04.jpg'></image>
+      <image data-swiperimg='3' src='/images/detail/list/Inception.jpg'></image>
+    </swiper-item>
+     <swiper-item>
+      <image data-swiperimg='4' src='/images/detail/list/The-Dark-Knight.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-swiperimg='5' src='/images/detail/list/The-Prestige.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-swiperimg='6' src='/images/detail/list/Memento.jpg'></image>
     </swiper-item>
   </swiper>
   <block wx:for='{{list_arr}}' wx:key='index'>
