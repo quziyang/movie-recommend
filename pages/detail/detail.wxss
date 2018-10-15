@@ -19,8 +19,8 @@
   vertical-align: middle;
 }
 
-.avatar_data text{
-  font-size: 28rpx;
+.avatar_date text{
+  font-size: 32rpx;
   margin-left: 10rpx;
 }
 
